@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>ProfKit</title>
+
+	<link rel="stylesheet" href="./css/main.css" />
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+	</style>
+	<link rel="stylesheet" href="./libs/Carousel/assets/owl.carousel.css">
+</head>
+
+<body>
+
+	<section class="popular">
+		<div class="container">
+			<div class="popular__titles">
+				<h1 class="popular__title">популярные товары</h1>
+				<a href="#" class="popular__recently">Недавно купили</a>
+				<a href="#" class="popular__interest">Вас может заинтересовать</a>
+			</div>
+			<div class="owl-carousel owl-theme popular__slider-wrapper" id="slider-wrapper">
+				<div class="popular__slider">
+					<div class="popular__product">
+						<button class="like">
+							<svg class="like__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="like__stroke" stroke="black">
+									<path
+										d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+										stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="compare">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="compare-stroke" stroke="black">
+									<path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<circle cx="9.99998" cy="3.65061" r="1.5532" stroke-width="1.5" />
+									<path d="M11.9136 3.53931H13.3994" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.59998 3.53931H8.08582" stroke-width="1.5" stroke-linecap="round" />
+									<path
+										d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+										stroke-width="1.5" />
+									<path
+										d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+										stroke-width="1.5" />
+								</g>
+							</svg>
+
+						</button>
+						<div class="owl-carousel owl-theme popular__product-slider">
+							<img src="./img/nofoto.jpg" alt="" class="popular__produt-img">
+							<img src="./img/nofoto.jpg" alt="" class="popular__produt-img">
+							<img src="./img/nofoto.jpg" alt="" class="popular__produt-img">
+							<img src="./img/nofoto.jpg" alt="" class="popular__produt-img">
+						</div>
+						<span class="popular__product-description">Тарелка керамическая ручной работы <br> ⌀ 12</span>
+						<div class="popular__product-price">
+							<span class="popular__product-newprice">600 ₽</span>
+							<span class="popular__product-oldprice">810 ₽ </span>
+						</div>
+
+						<div class="popular__product-buttons">
+							<div class="popular__product-toggle">
+								<button class="popular__product-remove">
+									<svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+											fill="#8D9295" />
+									</svg>
+								</button>
+								<span class="popular__product-quantity">1</span>
+								<button class="popular__product-add">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+										<line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+							</div>
+
+							<button class="popular__product-buy">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z"
+										fill="black" />
+								</svg>
+								<p>В корзину</p>
+							</button>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="popular__slider">
+					<div class="popular__product">
+						<button class="like">
+							<svg class="like__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="like__stroke" stroke="black">
+									<path
+										d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+										stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="compare">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="compare-stroke" stroke="black">
+									<path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<circle cx="9.99998" cy="3.65061" r="1.5532" stroke-width="1.5" />
+									<path d="M11.9136 3.53931H13.3994" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.59998 3.53931H8.08582" stroke-width="1.5" stroke-linecap="round" />
+									<path
+										d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+										stroke-width="1.5" />
+									<path
+										d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+										stroke-width="1.5" />
+								</g>
+							</svg>
+
+						</button>
+						<div class="owl-carousel owl-theme popular__product-slider">
+							<img src="./img/flower.jpg" alt="" class="popular__produt-img">
+							<img src="./img/flower.jpg" alt="" class="popular__produt-img">
+							<img src="./img/flower.jpg" alt="" class="popular__produt-img">
+							<img src="./img/flower.jpg" alt="" class="popular__produt-img">
+						</div>
+						<span class="popular__product-description">Кашпо для цветов керамическое <br> СИМПЛГРЕЙ</span>
+						<div class="popular__product-price">
+							<span class="popular__product-newprice">450 ₽</span>
+						</div>
+
+						<div class="popular__product-buttons">
+							<div class="popular__product-toggle">
+								<button class="popular__product-remove">
+									<svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+											fill="#8D9295" />
+									</svg>
+								</button>
+								<span class="popular__product-quantity">1</span>
+								<button class="popular__product-add">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+										<line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+							</div>
+
+							<button class="popular__product-buy">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z"
+										fill="black" />
+								</svg>
+								<p>В корзину</p>
+							</button>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="popular__slider">
+					<div class="popular__product">
+						<img src="./img/hit.svg" alt="" class="popular__product-img">
+						<button class="like">
+							<svg class="like__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="like__stroke" stroke="black">
+									<path
+										d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+										stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="compare">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="compare-stroke" stroke="black">
+									<path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<circle cx="9.99998" cy="3.65061" r="1.5532" stroke-width="1.5" />
+									<path d="M11.9136 3.53931H13.3994" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.59998 3.53931H8.08582" stroke-width="1.5" stroke-linecap="round" />
+									<path
+										d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+										stroke-width="1.5" />
+									<path
+										d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+										stroke-width="1.5" />
+								</g>
+							</svg>
+
+						</button>
+						<div class="owl-carousel owl-theme popular__product-slider">
+							<img src="./img/watch.jpg" alt="" class="popular__produt-img">
+							<img src="./img/watch.jpg" alt="" class="popular__produt-img">
+							<img src="./img/watch.jpg" alt="" class="popular__produt-img">
+							<img src="./img/watch.jpg" alt="" class="popular__produt-img">
+						</div>
+						<span class="popular__product-description popular__product-description--watch">Умные часы
+							SMARTWATCH XM 109 черный</span>
+						<div class="popular__product-price">
+							<span class="popular__product-newprice">12 999 ₽</span>
+						</div>
+
+						<div class="popular__product-buttons">
+							<div class="popular__product-toggle">
+								<button class="popular__product-remove">
+									<svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+											fill="#8D9295" />
+									</svg>
+								</button>
+								<span class="popular__product-quantity">1</span>
+								<button class="popular__product-add">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+										<line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+							</div>
+
+							<button class="popular__product-buy">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z"
+										fill="black" />
+								</svg>
+								<p>В корзину</p>
+							</button>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="popular__slider">
+					<div class="popular__product">
+						<img src="./img/new.svg" alt="" class="popular__product-img">
+						<button class="like">
+							<svg class="like__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="like__stroke" stroke="black">
+									<path
+										d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+										stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="compare">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="compare-stroke" stroke="black">
+									<path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<circle cx="9.99998" cy="3.65061" r="1.5532" stroke-width="1.5" />
+									<path d="M11.9136 3.53931H13.3994" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.59998 3.53931H8.08582" stroke-width="1.5" stroke-linecap="round" />
+									<path
+										d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+										stroke-width="1.5" />
+									<path
+										d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+										stroke-width="1.5" />
+								</g>
+							</svg>
+
+						</button>
+						<div class="owl-carousel owl-theme popular__product-slider">
+							<img src="./img/ring.jpg" alt="" class="popular__produt-img">
+							<img src="./img/ring.jpg" alt="" class="popular__produt-img">
+							<img src="./img/ring.jpg" alt="" class="popular__produt-img">
+							<img src="./img/ring.jpg" alt="" class="popular__produt-img">
+						</div>
+						<span class="popular__product-description">Золотое кольцо МАЛИКА с аметистом и <br>
+							фианитами</span>
+						<div class="popular__product-price">
+							<span class="popular__product-newprice">15 700 ₽</span>
+						</div>
+
+						<div class="popular__product-buttons">
+							<div class="popular__product-toggle">
+								<button class="popular__product-remove">
+									<svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+											fill="#8D9295" />
+									</svg>
+								</button>
+								<span class="popular__product-quantity">1</span>
+								<button class="popular__product-add">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+										<line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+							</div>
+
+							<button class="popular__product-buy">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z"
+										fill="black" />
+								</svg>
+								<p>В корзину</p>
+							</button>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="popular__slider">
+					<div class="popular__product">
+						<button class="like">
+							<svg class="like__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="like__stroke" stroke="black">
+									<path
+										d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+										stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="compare">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="compare-stroke" stroke="black">
+									<path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<circle cx="9.99998" cy="3.65061" r="1.5532" stroke-width="1.5" />
+									<path d="M11.9136 3.53931H13.3994" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.59998 3.53931H8.08582" stroke-width="1.5" stroke-linecap="round" />
+									<path
+										d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+										stroke-width="1.5" />
+									<path
+										d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+										stroke-width="1.5" />
+								</g>
+							</svg>
+
+						</button>
+						<div class="owl-carousel owl-theme popular__product-slider">
+							<img src="./img/nofoto.jpg" alt="" class="popular__produt-img">
+							<img src="./img/nofoto.jpg" alt="" class="popular__produt-img">
+							<img src="./img/nofoto.jpg" alt="" class="popular__produt-img">
+							<img src="./img/nofoto.jpg" alt="" class="popular__produt-img">
+						</div>
+						<span class="popular__product-description">Тарелка керамическая ручной работы <br> ⌀ 12</span>
+						<div class="popular__product-price">
+							<span class="popular__product-newprice">600 ₽</span>
+							<span class="popular__product-oldprice">810 ₽ </span>
+						</div>
+
+						<div class="popular__product-buttons">
+							<div class="popular__product-toggle">
+								<button class="popular__product-remove">
+									<svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+											fill="#8D9295" />
+									</svg>
+								</button>
+								<span class="popular__product-quantity">1</span>
+								<button class="popular__product-add">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+										<line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+							</div>
+
+							<button class="popular__product-buy">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z"
+										fill="black" />
+								</svg>
+								<p>В корзину</p>
+							</button>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="popular__slider">
+					<div class="popular__product">
+						<button class="like">
+							<svg class="like__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="like__stroke" stroke="black">
+									<path
+										d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+										stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="compare">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="compare-stroke" stroke="black">
+									<path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<circle cx="9.99998" cy="3.65061" r="1.5532" stroke-width="1.5" />
+									<path d="M11.9136 3.53931H13.3994" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.59998 3.53931H8.08582" stroke-width="1.5" stroke-linecap="round" />
+									<path
+										d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+										stroke-width="1.5" />
+									<path
+										d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+										stroke-width="1.5" />
+								</g>
+							</svg>
+
+						</button>
+						<div class="owl-carousel owl-theme popular__product-slider">
+							<img src="./img/flower.jpg" alt="" class="popular__produt-img">
+							<img src="./img/flower.jpg" alt="" class="popular__produt-img">
+							<img src="./img/flower.jpg" alt="" class="popular__produt-img">
+							<img src="./img/flower.jpg" alt="" class="popular__produt-img">
+						</div>
+						<span class="popular__product-description">Кашпо для цветов керамическое <br> СИМПЛГРЕЙ</span>
+						<div class="popular__product-price">
+							<span class="popular__product-newprice">450 ₽</span>
+						</div>
+
+						<div class="popular__product-buttons">
+							<div class="popular__product-toggle">
+								<button class="popular__product-remove">
+									<svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+											fill="#8D9295" />
+									</svg>
+								</button>
+								<span class="popular__product-quantity">1</span>
+								<button class="popular__product-add">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+										<line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+							</div>
+
+							<button class="popular__product-buy">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z"
+										fill="black" />
+								</svg>
+								<p>В корзину</p>
+							</button>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="popular__slider">
+					<div class="popular__product">
+						<img src="./img/hit.svg" alt="" class="popular__product-img">
+						<button class="like">
+							<svg class="like__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="like__stroke" stroke="black">
+									<path
+										d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+										stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="compare">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="compare-stroke" stroke="black">
+									<path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<circle cx="9.99998" cy="3.65061" r="1.5532" stroke-width="1.5" />
+									<path d="M11.9136 3.53931H13.3994" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.59998 3.53931H8.08582" stroke-width="1.5" stroke-linecap="round" />
+									<path
+										d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+										stroke-width="1.5" />
+									<path
+										d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+										stroke-width="1.5" />
+								</g>
+							</svg>
+
+						</button>
+						<div class="owl-carousel owl-theme popular__product-slider">
+							<img src="./img/watch.jpg" alt="" class="popular__produt-img">
+							<img src="./img/watch.jpg" alt="" class="popular__produt-img">
+							<img src="./img/watch.jpg" alt="" class="popular__produt-img">
+							<img src="./img/watch.jpg" alt="" class="popular__produt-img">
+						</div>
+						<span class="popular__product-description popular__product-description--watch">Умные часы
+							SMARTWATCH XM 109 черный</span>
+						<div class="popular__product-price">
+							<span class="popular__product-newprice">12 999 ₽</span>
+						</div>
+
+						<div class="popular__product-buttons">
+							<div class="popular__product-toggle">
+								<button class="popular__product-remove">
+									<svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+											fill="#8D9295" />
+									</svg>
+								</button>
+								<span class="popular__product-quantity">1</span>
+								<button class="popular__product-add">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+										<line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+							</div>
+
+							<button class="popular__product-buy">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z"
+										fill="black" />
+								</svg>
+								<p>В корзину</p>
+							</button>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="popular__slider">
+					<div class="popular__product">
+						<img src="./img/new.svg" alt="" class="popular__product-img">
+						<button class="like">
+							<svg class="like__svg" width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="like__stroke" stroke="black">
+									<path
+										d="M10 18C6.40583 16.4602 1.51375 12.0571 1.01457 7.00452C0.787298 4.70415 3.26091 2.00002 5.50727 2.00001C7.61203 2.00001 9.10144 3.15488 9.99998 5.0797C10.8985 3.15488 12.388 1.99999 14.4927 2C16.7391 2.00001 19.2127 4.70413 18.9854 7.00451C18.4862 12.0571 13.5942 16.4602 10 18Z"
+										stroke-width="2" />
+								</g>
+							</svg>
+						</button>
+						<button class="compare">
+							<svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+								xmlns="http://www.w3.org/2000/svg">
+								<g class="compare-stroke" stroke="black">
+									<path d="M1.11011 13.7679L4.35515 3.65063L7.86587 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<path d="M12.1339 13.7679L15.3789 3.65063L18.8896 13.7679" stroke-width="1.5"
+										stroke-linejoin="round" />
+									<circle cx="9.99998" cy="3.65061" r="1.5532" stroke-width="1.5" />
+									<path d="M11.9136 3.53931H13.3994" stroke-width="1.5" stroke-linecap="round" />
+									<path d="M6.59998 3.53931H8.08582" stroke-width="1.5" stroke-linecap="round" />
+									<path
+										d="M4.48813 17.231C2.68302 17.231 1.17674 15.9515 0.826716 14.25H8.14955C7.79953 15.9515 6.29325 17.231 4.48813 17.231Z"
+										stroke-width="1.5" />
+									<path
+										d="M15.5121 17.231C13.7069 17.231 12.2007 15.9515 11.8506 14.25H19.1735C18.8235 15.9515 17.3172 17.231 15.5121 17.231Z"
+										stroke-width="1.5" />
+								</g>
+							</svg>
+
+						</button>
+						<div class="owl-carousel owl-theme popular__product-slider">
+							<img src="./img/ring.jpg" alt="" class="popular__produt-img">
+							<img src="./img/ring.jpg" alt="" class="popular__produt-img">
+							<img src="./img/ring.jpg" alt="" class="popular__produt-img">
+							<img src="./img/ring.jpg" alt="" class="popular__produt-img">
+						</div>
+						<span class="popular__product-description">Золотое кольцо МАЛИКА с аметистом и <br>
+							фианитами</span>
+						<div class="popular__product-price">
+							<span class="popular__product-newprice">15 700 ₽</span>
+						</div>
+
+						<div class="popular__product-buttons">
+							<div class="popular__product-toggle">
+								<button class="popular__product-remove">
+									<svg width="12" height="2" viewBox="0 0 12 2" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<path fill-rule="evenodd" clip-rule="evenodd"
+											d="M0 1C0 0.447715 0.335786 0 0.75 0H11.25C11.6642 0 12 0.447715 12 1C12 1.55228 11.6642 2 11.25 2H0.75C0.335786 2 0 1.55228 0 1Z"
+											fill="#8D9295" />
+									</svg>
+								</button>
+								<span class="popular__product-quantity">1</span>
+								<button class="popular__product-add">
+									<svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+										xmlns="http://www.w3.org/2000/svg">
+										<line x1="6" y1="1" x2="6" y2="11" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+										<line x1="11" y1="6" x2="1" y2="6" stroke="#8D9295" stroke-width="2"
+											stroke-linecap="round" />
+									</svg>
+								</button>
+							</div>
+
+							<button class="popular__product-buy">
+								<svg width="21" height="20" viewBox="0 0 21 20" fill="none"
+									xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+										d="M0.5 2C0.5 1.44772 0.947715 1 1.5 1H3.88919C4.30755 1 4.6817 1.26043 4.82697 1.65277L5.69608 4H19.5C19.8095 4 20.1016 4.14331 20.2909 4.38811C20.4803 4.6329 20.5457 4.95159 20.4679 5.25117L19.3931 9.39351C19.0498 10.7163 17.8559 11.64 16.4892 11.64H7.73613L7.97647 12.3293C8.11652 12.7309 8.49534 13 8.92071 13H16C16.5523 13 17 13.4477 17 14C17 14.5523 16.5523 15 16 15H8.92071C7.6446 15 6.50815 14.1927 6.08798 12.9878L5.38414 10.9693C5.3727 10.9364 5.36298 10.9031 5.35501 10.8693L4.04079 5.28934L3.19311 3H1.5C0.947715 3 0.5 2.55228 0.5 2ZM6.26289 6L7.12021 9.64H16.4892C16.9448 9.64 17.3427 9.33211 17.4572 8.89117L18.2074 6H6.26289ZM9.5 17.5C9.5 18.3284 8.82843 19 8 19C7.17157 19 6.5 18.3284 6.5 17.5C6.5 16.6716 7.17157 16 8 16C8.82843 16 9.5 16.6716 9.5 17.5ZM16 19C16.8284 19 17.5 18.3284 17.5 17.5C17.5 16.6716 16.8284 16 16 16C15.1716 16 14.5 16.6716 14.5 17.5C14.5 18.3284 15.1716 19 16 19Z"
+										fill="black" />
+								</svg>
+								<p>В корзину</p>
+							</button>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<script src="./libs/jquery/jquery-3.6.0.min.js"></script>
+	<script src="./libs/Carousel/owl.carousel.js"></script>
+	<script src="./main.js"></script>
+</body>
+
+</html>
